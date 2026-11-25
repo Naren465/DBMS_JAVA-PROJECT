@@ -1,0 +1,215 @@
+/* ==========================================================================
+   PAGE 1: LOGIN & SIGNUP (Reference Image 1)
+   ========================================================================== */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 4rem 3rem 4rem;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Left Hero Section */
+.auth-hero {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3rem;
+}
+
+.auth-heading {
+    font-family: var(--font-heading);
+    font-size: 3.4rem;
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.auth-heading span {
+    display: block;
+    color: #cbd5e1;
+}
+
+.auth-subheading {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+.auth-bus-visual {
+    width: 100%;
+    max-width: 620px;
+    position: relative;
+}
+
+.auth-bus-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.9));
+}
+
+/* Right Glassmorphism Card */
+.auth-card-wrapper {
+    flex: 0.9;
+    max-width: 440px;
+    width: 100%;
+}
+
+.auth-card {
+    background: rgba(18, 22, 33, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 2.25rem;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.auth-title {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+
+/* Tabs */
+.auth-tabs {
+    display: flex;
+    background: rgba(10, 14, 23, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 4px;
+    margin-bottom: 1.75rem;
+}
+
+.auth-tab-btn {
+    flex: 1;
+    text-align: center;
+    padding: 0.65rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.auth-tab-btn.active {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Form */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.form-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #cbd5e1;
+}
+
+.form-control {
+    background: rgba(10, 14, 23, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-sm);
+    padding: 0.85rem 1rem;
+    color: #ffffff;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-auth-submit {
+    background: #ffffff;
+    color: #05070e;
+    border: none;
+    padding: 0.85rem;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: var(--transition);
+    margin-top: 0.5rem;
+}
+
+.btn-auth-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.auth-demo-hint {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.auth-demo-hint code {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+@media (max-width: 992px) {
+    .auth-container {
+        flex-direction: column;
+        padding: 6rem 1.5rem 2rem 1.5rem;
+    }
+    .auth-hero {
+        padding-right: 0;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
+    }
+    .auth-heading {
+        font-size: 2.5rem;
+    }
+}

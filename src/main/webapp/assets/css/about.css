@@ -1,0 +1,201 @@
+/* ==========================================================================
+   PAGE 3: ABOUT US (Reference Image 3)
+   ========================================================================== */
+
+.about-page-container {
+    min-height: 100vh;
+    padding: 7rem 4rem 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-header-box {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.about-main-title {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+}
+
+.about-sub-title {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+/* Content Columns */
+.about-content-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Left Illustration & Stats */
+.about-visual-col {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.about-stats-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 520px;
+    margin-bottom: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    position: relative;
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.stat-circle-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(56, 189, 248, 0.5);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.5rem auto;
+}
+
+.stat-circle-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: #38bdf8;
+}
+
+.about-globe-img {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    filter: drop-shadow(0 0 30px rgba(56, 189, 248, 0.4));
+}
+
+/* Right Glass Info Card */
+.about-card-col {
+    flex: 1;
+    max-width: 520px;
+}
+
+.about-glass-card {
+    background: rgba(14, 18, 28, 0.75);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--radius-lg);
+    padding: 2.75rem 2.25rem;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.card-section-heading {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.card-features-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-feature-item {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.card-feature-item::before {
+    content: '•';
+    color: var(--primary);
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.card-feature-item strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.btn-explore {
+    width: 100%;
+    background: #e2e8f0;
+    color: #05070e;
+    border: none;
+    padding: 0.9rem;
+    border-radius: var(--radius-full);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.35);
+    transition: var(--transition);
+}
+
+.btn-explore:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
+    background: #ffffff;
+}
+
+@media (max-width: 992px) {
+    .about-content-row {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .about-visual-col, .about-card-col {
+        max-width: 100%;
+    }
+}

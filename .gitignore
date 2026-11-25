@@ -1,0 +1,34 @@
+# Compiled class files
+*.class
+
+# Maven build output
+target/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log files
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Compiled bytecode in WEB-INF/classes (these get regenerated on build)
+src/main/webapp/WEB-INF/classes/
+
+# Bundled tools (Maven is too large for GitHub)
+tools/
